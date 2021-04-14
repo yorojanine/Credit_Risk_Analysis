@@ -70,5 +70,10 @@ The Average/Total application results show a 99% precision score and a 94% recal
 
 ## Summary:
 
-Summary of results
+Based on accuracy scores alone and looking at the different resampling algorithms, all four models were poor performers of predicting credit risk. Whether we were oversampling, undersampling or a combination of the two, the balanced accuracy scores ranged between 54% and 68%.  Using a combination model yielded the highest score. However, when we assessed two additional models that reduces bias, we see an increase in the accuracy score. While the Balanced Random Forest Classifier (BRFC) improved to 79%, the Easy Ensemble AdaBoost Classifier (EE) machine learning model significantly increased to 93%. Prematurely, an accuracy score alone may not be as meaningful without looking at precision and recall/sensitivity.
+
+
+Precision, or Positive Predictive Value (PPV), is an indicator of whether the model correctly predicted the results to be true. Here, a true positive would mean we correctly predicted a high risk application. Using the confusion matrix, we can see the number of high risk applications that were correctly identified and the amounts identified are dramatically low. Across the precision score of the models for high-risk applications, they all come in at 1% with the exception of the additional models. However, the BRFC and EE model still have low precision scores of 3% and 9% respectively.
+
+
 Recommendation
